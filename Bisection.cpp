@@ -25,7 +25,7 @@ void bisection(double a,double b)
             do
             {
                 m=(a+b)/2;
-                cout<<f(m)<<endl;
+                cout<<"Therefore the new root = "<<m<<" & f("<<m<<")= "<<f(m)<<endl;
                 if (f(m)==0)
                 {
                     break;
@@ -48,7 +48,7 @@ void bisection(double a,double b)
             {
                 n--;
                 m=(a+b)/2;
-                cout<<f(m)<<endl;
+                cout<<"Therefore the new root = "<<m<<" & f("<<m<<")= "<<f(m)<<endl;
                 if (f(m)==0)
                 {
                     break;
@@ -86,11 +86,13 @@ int main()
     {
         cout<<"Enter the max error : ";
         cin>>error;
+        cout<<endl;
     }
     else if(z==1)
     {
         cout<<"Enter the number of iterations : ";
         cin>>n;
+        cout<<endl;
     }
     else
     {
